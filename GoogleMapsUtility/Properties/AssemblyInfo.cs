@@ -4,8 +4,8 @@ using Android.App;
 
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
-[assembly: AssemblyTitle ("GoogleMapsUtility")]
-[assembly: AssemblyDescription ("")]
+[assembly: AssemblyTitle ("GoogleMapsUtilityLibrary")]
+[assembly: AssemblyDescription ("This open-source library contains classes that are useful for a wide range of applications using the Google Maps Android API")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("")]
 [assembly: AssemblyProduct ("")]

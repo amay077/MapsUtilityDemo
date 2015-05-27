@@ -21,6 +21,6 @@ Global
 		{AFA0F6B2-74F1-432B-9926-C8474B873B58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = MapsUtilityDemo\MapsUtilityDemo.csproj
+		version = 0.3.4
 	EndGlobalSection
 EndGlobal

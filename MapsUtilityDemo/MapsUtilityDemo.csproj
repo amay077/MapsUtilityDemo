@@ -17,7 +17,7 @@
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AssemblyName>MapsUtilityDemo</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <ReleaseVersion>0.3.4</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -52,16 +52,16 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="Xamarin.Android.Support.v4">
-      <HintPath>..\packages\Xamarin.Android.Support.v4.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
-      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    <Reference Include="Xamarin.GooglePlayServices.Basement">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
-      <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    <Reference Include="Xamarin.GooglePlayServices.Base">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Base.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Base.dll</HintPath>
     </Reference>
-    <Reference Include="GooglePlayServicesLib">
-      <HintPath>..\packages\Xamarin.GooglePlayServices.22.0.0.2\lib\MonoAndroid41\GooglePlayServicesLib.dll</HintPath>
+    <Reference Include="Xamarin.GooglePlayServices.Maps">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Maps.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Maps.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -81,17 +81,11 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
-  <ItemGroup>
-    <XamarinComponentReference Include="googleplayservices">
-      <Version>22.0.0.0</Version>
-      <Visible>False</Visible>
-    </XamarinComponentReference>
-  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GoogleMapsUtility\GoogleMapsUtility.csproj">
       <Project>{23E74366-695C-4563-A3E6-B0E704057167}</Project>
       <Name>GoogleMapsUtility</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
